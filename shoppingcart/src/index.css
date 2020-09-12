@@ -21,12 +21,16 @@ textarea{
 
 .grid-container{
   display: grid;
-  grid-template-areas: "header"
+  grid-template-areas:
+  "header"
   "main"
   "footer";
-  grid-template-rows: 5rem 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
   height: 100%;
+}
+a{
+  text-decoration: none;
 }
 a:hover{
   color: #ff8000;
@@ -37,6 +41,7 @@ header{
   background-color:#203040 ;
   color: #ffffff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: .5;
 }
@@ -44,6 +49,7 @@ head a{
   color: #ffffff;
   text-decoration: none;
 }
+
 
 main{
   grid-area: main;
@@ -67,7 +73,7 @@ footer{
 }
 
 .sidebar{
-  flex: 1 20 rem;
+  flex: 1 20rem;
 }
 
 /* Products */
@@ -116,4 +122,16 @@ footer{
 }
 .button.primary {
   background-color: #118822;
+}
+
+/*filter */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.filter div {
+  flex: 1;
 }
